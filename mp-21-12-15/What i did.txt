@@ -1,0 +1,93 @@
+Reza, Friday, December 4
+
+
+1. open file, close, quit, mute, pause, stop- these menuItems are implemented
+2. there are some bugs. if you try to open a file while another file is already playing, then (see what happens.....)
+3. the main problem is that the screen is not resizeable at all
+
+
+
+
+
+
+
+
+
+Nafee, Friday, December 4
+
+1. Now I can open a file while another is playing. (All files running simultaneously - this bug is solved).
+2. Still now the media view is not resizable at all
+3. Increase volume, decrease volume, mute - all these are implemented
+4. Speed options - faster, normal, slower are implemented
+
+
+
+Reza, Wednesday, December 12
+
+1. Showing "about" in a new window(the rest is left for you..........)
+2. Making the screen resizable correctly, alligning the mediaview in center(binding the mediaview in main class)
+3. Adding a little in Mute and Pause button, when these buttons are pressed, they become Unmute and Play respectively
+4. Now "Vol" level changes it's color when audio is mutted.
+5. Toggle Fullscreen, Zoom(in four size), take snapshoot - these are implemented
+6. I have changed the mediaview.fxml a lot. you should copy it directly.
+
+
+
+
+
+
+
+
+Nafee, Wednesday, December 9
+
+1. Now the help, about, play lists - all are in new window.
+2. Multiple files can be open. They are shown in the table view.
+
+
+
+
+
+
+Nafee, Monday, December 14
+
+What Nafee did:
+
+1. Now a directory can be opened.
+2. Loop is implemented.
+3. Randomize is implemented.
+
+Nafee requests Reza to do the following things:
+
+1. Make the loop button change to unloop after a loop. Again back to loop after an unloop.
+2. Make the randomize button change to normalize after a randomize. Again back to randomize after a normalize.
+4. make a new fxml scene containing 3 text boxes (hours, minutes & seconds), a button go. Make a controller for this.
+
+
+Reza, Monday, December 14
+1. Yeah, your requirments are done.
+2. Three new buttons(prev, next, stop) are created and implemented
+3. new fxml scene and controller are implemented which set "seekDuration" variable in main class
+4. I can't open directory. there was an another exception.
+
+
+
+
+
+
+
+
+Nafee, Wednesday, December 16
+1. Now when I open a file or multiple files or directory, previous multipleFileRunThread will be closed. 
+So I think the problem of playing two songs playing simultaneously will be solved.
+
+
+Reza, Friday, December 18
+1. Icons are added for different buttons
+2. Now you can change the position and volume of a media by simply clicking the sliders
+
+
+
+
+
+
+3. keyboard shortkuts are added for different functions. you can find them in help menu.

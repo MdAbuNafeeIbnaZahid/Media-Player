@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PlayListController">
+    <children>
+        <Button fx:id="close" layoutX="483.0" layoutY="120.0" mnemonicParsing="false" onAction="#closeButtonAction" text="Close" />
+        <TableView fx:id="tableView" layoutX="10.0" layoutY="11.0" prefHeight="377.0" prefWidth="459.0">
+            <columns>
+                <TableColumn fx:id="filePathColumn" prefWidth="450.0" text="File Path" />
+            </columns>
+        </TableView>
+    </children>
+</AnchorPane>

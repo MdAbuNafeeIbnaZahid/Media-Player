@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="HelpController">
+   <children>
+      <TextArea editable="false" layoutX="32.0" layoutY="34.0" prefHeight="230.0" prefWidth="412.0" text="Shortcuts:&#10;    Control + O    Open a file&#10;    Control + Q    Exit the program&#10;    Control + V     View the playlist&#10;    Control + P     open previous  media of the playlist&#10;    Control + N    open next media of the playlist&#10;    Control + M    Mute audio&#10;    Control + S     Take Snapshoot&#10;    Control + L      Repeat On/Off&#10;    Control + R     Randomize playlist&#10;    F11                  Toggle fullscreen&#10;    F1                    Show help&#10;&#10;    Arrow Up         volume up&#10;    Arrow  Down    volume down&#10;    Arrow  Left       Backward the media by 10 sec&#10;    Arrow  Right     Forward the media by 10 sec&#10;    Space                Play/Pause&#10;&#10;" />
+      <Button fx:id="closeButton" layoutX="469.0" layoutY="288.0" mnemonicParsing="false" onAction="#closeButtonAction" text="Close" />
+   </children>
+</AnchorPane>

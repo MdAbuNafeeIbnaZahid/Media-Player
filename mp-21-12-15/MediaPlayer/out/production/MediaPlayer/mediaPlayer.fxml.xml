@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.media.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="borderPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="0.0" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MediaPlayerController">
+   <top>
+      <MenuBar fx:id="menuBar" style="-fx-background-color: #cdcdcd;" BorderPane.alignment="CENTER">
+         <menus>
+            <Menu mnemonicParsing="false" text="File">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#openFile" text="Open" />
+                  <MenuItem mnemonicParsing="false" onAction="#openMultipleFile" text="Open Multiple Files" />
+                  <MenuItem mnemonicParsing="false" onAction="#openDirectory" text="Open Directory" />
+                  <MenuItem mnemonicParsing="false" onAction="#closeFile" text="Close" />
+                  <MenuItem mnemonicParsing="false" onAction="#quit" text="Quit" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Audio">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#increseVolume" text="Increse Volume" />
+                  <MenuItem mnemonicParsing="false" onAction="#decreseVolume" text="Decrese Volume" />
+                  <MenuItem fx:id="muteButton" mnemonicParsing="false" onAction="#mute" text="Mute" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Video">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#toggleFullScreen" text="Toggle Fullscreen" />
+                  <Menu mnemonicParsing="false" text="Zoom">
+                    <items>
+                      <MenuItem mnemonicParsing="false" onAction="#zoom14" text="1:4" />
+                        <MenuItem mnemonicParsing="false" onAction="#zoom12" text="1:2" />
+                        <MenuItem mnemonicParsing="false" onAction="#zoom11" text="1:1" />
+                        <MenuItem mnemonicParsing="false" onAction="#zoom21" text="2:1" />
+                    </items>
+                  </Menu>
+                  <MenuItem mnemonicParsing="false" onAction="#takeSnapshoot" text="Take Snapshoot" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Playlist">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#viewPlaylist" text="View PlayList" />
+                  <MenuItem fx:id="pauseButton" mnemonicParsing="false" onAction="#pause" text="Pause" />
+                  <MenuItem mnemonicParsing="false" onAction="#stop" text="Stop" />
+                  <MenuItem mnemonicParsing="false" onAction="#playPrevious" text="Previous" />
+                  <MenuItem mnemonicParsing="false" onAction="#playNext" text="Next" />
+                  <Menu mnemonicParsing="false" text="Speed">
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#fastenSpeed" text="Faster" />
+                        <MenuItem mnemonicParsing="false" onAction="#normalSpeed" text="Normal" />
+                        <MenuItem mnemonicParsing="false" onAction="#slowenSpeed" text="Slower" />
+                     </items>
+                  </Menu>
+                  <MenuItem fx:id="loopItem" mnemonicParsing="false" onAction="#loop" text="Loop" />
+                  <MenuItem mnemonicParsing="false" onAction="#goToSTime" text="Go to Specific Time" />
+                  <MenuItem fx:id="randomizeItem" mnemonicParsing="false" onAction="#randomizePlaylist" text="Randomize" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Help">
+               <items>
+                  <MenuItem fx:id="helpMenuItem" mnemonicParsing="false" onAction="#help" text="Help" />
+                  <MenuItem fx:id="aboutMenuItem" mnemonicParsing="false" onAction="#about" text="About" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+   </top>
+   <center>
+      <MediaView fx:id="mediaView" fitHeight="348.0" fitWidth="600.0" BorderPane.alignment="CENTER" />
+   </center>
+   <bottom>
+      <HBox fx:id="hBox" prefHeight="25.0" style="-fx-background-color: #9d9d9d;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="playPauseButton" mnemonicParsing="false" onAction="#playButton" prefHeight="25.0" prefWidth="25.0" style="-fx-background-color: #9d9d9d;" />
+            <Button fx:id="pB" mnemonicParsing="false" onAction="#prevButton" prefHeight="25.0" prefWidth="25.0" style="-fx-background-color: #9d9d9d;" />
+            <Button fx:id="sB" mnemonicParsing="false" onAction="#stopButton" prefHeight="25.0" prefWidth="25.0" style="-fx-background-color: #9d9d9d;" />
+            <Button fx:id="nB" mnemonicParsing="false" onAction="#nextButton" prefHeight="25.0" prefWidth="25.0" style="-fx-background-color: #9d9d9d;" />
+            <Label prefHeight="25.0" prefWidth="30.0" text=" Time" />
+            <Slider fx:id="timeSlider" prefHeight="25.0" prefWidth="0.0" HBox.hgrow="ALWAYS" />
+            <Label fx:id="playTime" prefHeight="17.0" prefWidth="106.0" />
+            <Button fx:id="vol" mnemonicParsing="false" onAction="#muteUnmute" prefHeight="25.0" prefWidth="25.0" style="-fx-background-color: #9d9d9d;" />
+            <Slider fx:id="volumeSlider" prefHeight="25.0" prefWidth="83.0" />
+         </children>
+      </HBox>
+   </bottom>
+</BorderPane>
